@@ -1,44 +1,139 @@
+/* Polices */
+@font-face {
+	font-family: 'anime';
+	src: url('police/anirm.ttf') format('truetype');
+}	
+@font-face{
+	font-family: 'signe';
+	src: url('police/tngan.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: 'text';
+	src: url('police/partybusiness.ttf') format('truetype');
+}
+
+/* General */
+
+p, a, h6, h5, button
+{
+	font-family: 'text';
+	font-size: 200%;
+}
+
+h2
+{
+	font-family: 'anime';
+}
+
+.signe
+{
+	font-family: 'signe';
+	color: orange;
+}
+
+body
+{
+	color: white;
+	background-color:white;
+	background-image:url(../img/bg_light.png);
+	
+}
+
+/* Navigation */
+
+.navbar
+{
+	background-color: orangered;
+	font-size: 100%;
+}
+
+/* Carroussel */
+
+.text-banner{
+	font-family: 'text';
+	color: white;
+	margin-bottom: 16%;
+	font-size: 300%;
+}
+
+/* Boutton */
+
 .btnmost
 {
   justify-content: center;
+
 }
 
 .most
 {
-  margin-right: 1%;
+	margin-right: 1%;
+	border-radius: 10px;
+	margin: 2%;
+}
+
+/* Cards Fellow */
+
+.nom
+{
+	position: absolute;
+	top: 40%;
+	font-size: 500%;
+	opacity: 1;
+	font-family: 'text';
 }
 
 .top
 {
 	position: absolute;
-
-	top: 5%px;
-  margin-left: 30%;
-  margin-right: 15%;
+	top: 5%;
+	padding-left: 15%;
+	padding-right: 15%;
 	font-size: 200%;
 	background-color: white;
-	border-radius: 10%;
+	border-radius: 10px;
 	opacity: 0.8;
+}
 
+#premiere_partie h2
+{
+	color: black;
 }
 
 .mid
 {
+	font-family: 'text';
 	position: absolute;
-
-	top: 30%;
-  margin-left: 35%;
-  margin-right: 15%;
-	font-size: 200%;
-	background-color: white;
+	color: red;
+	top: 5%;
+	font-size: 500%;
 	border-radius: 10%;
-	opacity: 0.8;
-
+	
 }
 
-.card 
+.gimli
 {
+	text-decoration: line-through;
+	text-decoration-color: orangered;
+}
+
+.fellow h6
+{
+	color: white;
+	background-color: hidden;
+}
+.card p,h5
+{
+	color: white;
+}
+
+.fellow 
+{
+	text-align: center;
+	align-items: center;
+	color: black;
 	opacity: 0.8;
+	background-image:url(../img/bg_dark.png);
 }
 
 .card .img
@@ -46,32 +141,91 @@
 	position: absolute;
 	z-index: 1;
 	opacity: 0.5;
-	
-
 }
-
-
 
 .card:hover
 {
  	opacity: 1;
 }
 
-
+.card:hover .mid{
+	opacity: 0;
+}
 
 .card:hover .top{
 	opacity: 0;
 }
 
-#premiere_partie
-{
-  margin-left: 3%;
-  margin-right: 3%;
+.card:hover .nom{
+	opacity: 0;
 }
 
-#blockpage
+#premiere_partie
+{
+	padding-bottom: 5%;
+	padding-top: 5%;
+	margin-left: 3%;
+  	margin-right: 3%;
+}
+
+/* Media Get Myreward */
+
+.imgcoin
+{
+	border-radius: 50%;
+}
+
+#troisieme_partie
+{
+	background-image:url(../img/bg_dark.png);
+	padding: 3%;
+	color: white;
+}
+
+/* Cards Best Hunter */
+
+.hunter1
 {
 	margin-left: 5%;
-	margin-right: 5%;
+	margin-top: 2%;
+	margin-right: 30%;
+}
+
+#quatrieme_partie 
+{
+	margin: 4%;
+}
+
+#besthunters
+{
+	display: flex;
+	flex-direction: row;
+}
+
+/* Tableau About the ring */
+
+
+
+/* Media Join Army */
+
+
+
+/* Contact + footer */
+
+.btncontact
+{
+	display: block;
+	margin: auto;
+	background-color: white;
+}
+
+footer
+{
+	background-color: orangered;
+}
+
+#sixieme_partie
+{
+	background-color: black;
 }
 
